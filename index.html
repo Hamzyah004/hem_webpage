@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frizerski Salon HEM</title>
+  <meta name="description" content="Modern, friendly hair salon. Cuts, styling, beard grooming. Book your appointment today." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#/" data-link>
+        <span class="brand__mark">✂</span>
+        <span class="brand__text">Frizerski Salon HEM</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#/" data-link>Početna</a>
+        <a href="#/about" data-link>O nama</a>
+        <a href="#/pricing" data-link>Cijene</a>
+        <a href="#/contact" data-link>Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SPA mount point (views are injected here) -->
+  <main id="app"></main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__mark">✂</span>
+          <span class="brand__text">Frizerski Salon HEM</span>
+        </div>
+        <p class="muted">Frizure bez vijeka trajana uz druželjubivo okruženje</p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Stranice</h4>
+          <a href="#/about" data-link>O nama</a>
+          <a href="#/pricing" data-link>Cijene</a>
+          <a href="#/contact" data-link>Kontakt</a>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <a href="tel:+0000000000">+387 61 177 944</a>
+          <a href="mailto:hello@your-salon.com">elvedinhodzic@icloud.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Frizerski Salon HEM. Sva prava zadržana.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

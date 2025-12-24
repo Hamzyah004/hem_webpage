@@ -1,0 +1,68 @@
+
+<section class="page-hero">
+    <div class="container">
+      <h1>Contact</h1>
+      <p class="lead">Call, message, or visit us.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid--2">
+      <div class="card">
+        <h2>Get in touch</h2>
+        <div class="contact-cards">
+          <a class="mini" href="tel:+0000000000">
+            <div class="mini__title">Phone</div>
+            <div class="mini__value">+00 000 000 000</div>
+          </a>
+          <a class="mini" href="mailto:hello@your-salon.com">
+            <div class="mini__title">Email</div>
+            <div class="mini__value">hello@your-salon.com</div>
+          </a>
+          <a class="mini" href="#">
+            <div class="mini__title">Address</div>
+            <div class="mini__value">Your Street 12, Your City</div>
+          </a>
+        </div>
+
+        <h3 class="mt">Opening hours</h3>
+        <ul class="list">
+          <li><span>Mon–Fri</span><span>09:00–19:00</span></li>
+          <li><span>Saturday</span><span>10:00–17:00</span></li>
+          <li><span>Sunday</span><span>Closed</span></li>
+        </ul>
+
+        <p class="muted mt">
+          If you want a working map: replace the iframe below with your Google Maps embed code.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Send a message</h2>
+        <form class="form" onsubmit="return window.handleContactSubmit(event)">
+          <label>
+            Name
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Phone or email
+            <input name="contact" type="text" placeholder="+387… / you@email.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="What would you like to book?" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send</button>
+          <p class="muted">
+            This demo form opens your email app (no backend needed).
+            If you want real submissions, tell me what hosting you use and I’ll wire it up.
+          </p>
+        </form>
+
+        <div class="map mt">
+          <div class="map__hint">Map placeholder</div>
+        </div>
+      </div>
+    </div>
+  </section>
