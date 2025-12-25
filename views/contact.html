@@ -1,67 +1,67 @@
 
 <section class="page-hero">
     <div class="container">
-      <h1>Contact</h1>
-      <p class="lead">Call, message, or visit us.</p>
+      <h1>Kontakt</h1>
+      <p class="lead">Poziv, poruka, ili nas posjeti.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container grid grid--2">
       <div class="card">
-        <h2>Get in touch</h2>
+        <h2>Javite nam se</h2>
         <div class="contact-cards">
           <a class="mini" href="tel:+0000000000">
-            <div class="mini__title">Phone</div>
-            <div class="mini__value">+00 000 000 000</div>
+            <div class="mini__title">Telefon</div>
+            <div class="mini__value">+387 61 177 944</div>
           </a>
           <a class="mini" href="mailto:hello@your-salon.com">
             <div class="mini__title">Email</div>
-            <div class="mini__value">hello@your-salon.com</div>
+            <div class="mini__value">elvdinhodzic@icloud.com</div>
           </a>
           <a class="mini" href="#">
-            <div class="mini__title">Address</div>
-            <div class="mini__value">Your Street 12, Your City</div>
+            <div class="mini__title">Adresa</div>
+            <div class="mini__value">Džemala Bijedića 107</div>
           </a>
         </div>
 
-        <h3 class="mt">Opening hours</h3>
+        <h3 class="mt">Kada smo otvoreni?</h3>
         <ul class="list">
-          <li><span>Mon–Fri</span><span>09:00–19:00</span></li>
-          <li><span>Saturday</span><span>10:00–17:00</span></li>
-          <li><span>Sunday</span><span>Closed</span></li>
+          <li><span>Pon–Pet</span><span>08:00–19:00</span></li>
+          <li><span>Subota</span><span>08:00–16:30</span></li>
+          <li><span>Nedjelja</span><span>Neradna</span></li>
         </ul>
-
-        <p class="muted mt">
-          If you want a working map: replace the iframe below with your Google Maps embed code.
-        </p>
       </div>
 
       <div class="card">
-        <h2>Send a message</h2>
+        <h2>Pošalji nam poruku</h2>
         <form class="form" onsubmit="return window.handleContactSubmit(event)">
           <label>
-            Name
-            <input name="name" type="text" placeholder="Your name" required />
+            Ime
+            <input name="name" type="text" placeholder="Vaše ime" required />
           </label>
           <label>
-            Phone or email
+            Telefon ili email
             <input name="contact" type="text" placeholder="+387… / you@email.com" required />
           </label>
           <label>
-            Message
-            <textarea name="message" rows="5" placeholder="What would you like to book?" required></textarea>
+            Poruka
+            <textarea name="message" rows="5" placeholder="Šta biste željeli?" required></textarea>
           </label>
 
-          <button class="btn" type="submit">Send</button>
-          <p class="muted">
-            This demo form opens your email app (no backend needed).
-            If you want real submissions, tell me what hosting you use and I’ll wire it up.
-          </p>
+          <button class="btn" type="submit">Pošalji</button>
         </form>
 
         <div class="map mt">
-          <div class="map__hint">Map placeholder</div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.2711195378347!2d18.36430377653876!3d43.85020893966603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x82af9182fde4fb1b%3A0xc280b50e2422b274!2sFrizerski%20salon%20HEM!5e0!3m2!1sen!2sba!4v1766693328607!5m2!1sen!2sba"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </div>
