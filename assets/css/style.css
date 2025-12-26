@@ -249,6 +249,41 @@ h1{
   background: rgba(16,18,26,.92);
 }
 
+.story-wrap {
+  position: relative;
+}
+
+/* Slika pehara iza carda */
+.story-bg {
+  position: absolute;
+  left: -140px;     /* koliko viri lijevo */
+  top: -40px;       /* vertikalni pomak */
+  height: 380px;    /* prilagodi visini */
+  opacity: 0.18;    /* suptilno */
+  transform: rotate(-12deg);
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(0.5px);
+}
+
+.story-bg {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 30%,
+    black 70%,
+    transparent
+  );
+}
+
+
+/* Card iznad slike */
+.story-card {
+  position: relative;
+  z-index: 2;
+}
+
+
 .section{
   padding: 54px 0;
 }
@@ -488,4 +523,39 @@ body {
   .bg-effects .blob.blob2{ top: 12vh; right: -280px; }
   .bg-effects .blob.blob3{ bottom: -360px; left: -10vw; }
 }
+@media (max-width: 768px) {
+  .story-bg {
+    /* nova pozicija */
+    top: -110px;
+    right: -10px;
+    left: auto;
+
+    /* manji i diskretniji */
+    height: 250px;
+    opacity: 0.3;
+
+    /* više "ukoso" */
+    transform: rotate(18deg);
+
+    /* jače maskiranje da ne guši tekst */
+    mask-image:
+      linear-gradient(to left,
+        transparent,
+        black 35%,
+        black 65%,
+        transparent
+      ),
+      linear-gradient(to bottom,
+        transparent,
+        black 35%,
+        black 65%,
+        transparent
+      );
+
+    mask-composite: intersect;
+    -webkit-mask-composite: destination-in;
+  }
+}
+
+
 
