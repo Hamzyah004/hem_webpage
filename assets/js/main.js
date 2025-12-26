@@ -35,3 +35,27 @@ window.handleContactSubmit = function (e) {
   window.location.href = `mailto:hello@your-salon.com?subject=${subject}&body=${body}`;
   return false;
 };
+
+window.handleContactSubmit = function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+
+  const name = form.name.value.trim();
+  const contact = form.contact.value.trim();
+  const message = form.message.value.trim();
+
+  const subject = encodeURIComponent(
+    "Poruka sa web stranice – Frizerski Salon HEM"
+  );
+
+  const body = encodeURIComponent(
+    `Ime: ${name}\nKontakt: ${contact}\n\nPoruka:\n${message}`
+  );
+
+  window.location.href =
+    `mailto:elvedinhodzic@icloud.com?subject=${subject}&body=${body}`;
+
+  return false;
+};
+
