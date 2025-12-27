@@ -527,7 +527,7 @@ body {
   .story-bg {
     /* nova pozicija */
     top: -110px;
-    right: -10px;
+    right: 20px;
     left: auto;
 
     /* manji i diskretniji */
@@ -535,7 +535,7 @@ body {
     opacity: 0.3;
 
     /* više "ukoso" */
-    transform: rotate(18deg);
+    transform: rotate(-18deg);
 
     /* jače maskiranje da ne guši tekst */
     mask-image:
